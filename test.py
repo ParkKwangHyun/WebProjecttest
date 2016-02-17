@@ -33,7 +33,12 @@ class Person(object):
 @app.route("/objecttest/<ins>")
 def objecttest(ins = "", age = 21, job = "선생님"):
     love = Person(ins, age, job)
-    return print (love.name, love.age, love.job)
+    return str (love.name, love.age, love.job)
+
+testlist = []               #리스트를 만든다!
+testlist.append(1)          #리스트에 푸쉬하는것!
+if testlist
+
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
